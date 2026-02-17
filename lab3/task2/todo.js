@@ -11,13 +11,11 @@ document.addEventListener("click", function (d) {
     const task = btn.parentElement;
     task.remove();
 });
-
-
 document.querySelector(".form").addEventListener("submit", function (e) {
-    e.preventDefault(); 
+    e.preventDefault();
     const input = document.querySelector(".input");
-    const value = input.value.trim(); 
-    if (value === "") return; 
+    const value = input.value.trim();
+    if (value === "") return;
 
     const li = document.createElement("li");
     li.classList.add("todoitem");
