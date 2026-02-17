@@ -1,3 +1,15 @@
+h1{
+    font-family: 'Archivo Black';
+    font-size: 60px;
+    margin-left: 80px;
+    color: #162660;
+    margin-top: 10px;
+}
+.head{
+    width: 100%;
+    margin-top: -20px;
+}
+
 .grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);

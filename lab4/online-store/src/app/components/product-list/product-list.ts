@@ -40,7 +40,7 @@ export class ProductListComponent {
       price: 106254,
       rating: 5,
       image: 'https://resources.cdn-kaspi.kz/img/m/p/ha6/hf3/66594300821534.jpg?format=gallery-medium',
-      images: ['https://resources.cdn-kaspi.kz/img/m/p/hdd/h8a/66594301345822.jpg?format=gallery-medium', 'https://resources.cdn-kaspi.kz/img/m/p/h69/h7d/66594301870110.jpg?format=gallery-medium', 'https://resources.cdn-kaspi.kz/img/m/p/h5d/h67/66594499002398.jpg?format=gallery-medium', 'https://resources.cdn-kaspi.kz/img/m/p/p1a/p9c/67212712.png?format=gallery-medium'],
+      images: ['https://resources.cdn-kaspi.kz/img/m/p/ha6/hf3/66594300821534.jpg?format=gallery-medium', 'https://resources.cdn-kaspi.kz/img/m/p/h69/h7d/66594301870110.jpg?format=gallery-medium', 'https://resources.cdn-kaspi.kz/img/m/p/h5d/h67/66594499002398.jpg?format=gallery-medium', 'https://resources.cdn-kaspi.kz/img/m/p/p1a/p9c/67212712.png?format=gallery-medium'],
       link: 'https://kaspi.kz/shop/p/mfu-epson-ecotank-l3250-107929066/?c=750000000'
     },
     {
@@ -60,7 +60,7 @@ export class ProductListComponent {
       price: 1290,
       rating: 5,
       image: 'https://resources.cdn-kaspi.kz/img/m/p/h52/h41/86556430041118.png?format=gallery-medium',
-      images: ['https://resources.cdn-kaspi.kz/img/m/p/hae/h8d/86556430172190.png?format=gallery-medium', 'https://resources.cdn-kaspi.kz/img/m/p/h79/h46/86556430237726.png?format=gallery-medium', 'https://resources.cdn-kaspi.kz/img/m/p/h5f/h8d/86556430303262.png?format=gallery-medium'],
+      images: ['https://resources.cdn-kaspi.kz/img/m/p/h52/h41/86556430041118.png?format=gallery-medium', 'https://resources.cdn-kaspi.kz/img/m/p/h79/h46/86556430237726.png?format=gallery-medium', 'https://resources.cdn-kaspi.kz/img/m/p/h5f/h8d/86556430303262.png?format=gallery-medium'],
       link: 'https://kaspi.kz/shop/p/luxvisage-gel-brow-laminator-extreme-fix-prozrachnyi-4-ml-121516864/?c=315430100'
     },
     {
@@ -70,7 +70,7 @@ export class ProductListComponent {
       price: 3360,
       rating: 5,
       image: 'https://resources.cdn-kaspi.kz/img/m/p/hef/h6e/86640643702814.png?format=gallery-medium',
-      images: ['https://resources.cdn-kaspi.kz/img/m/p/hb5/hcf/86640324050974.jpg?format=gallery-medium', 'https://resources.cdn-kaspi.kz/img/m/p/h1d/h3b/86640324083742.jpg?format=gallery-medium', 'https://resources.cdn-kaspi.kz/img/m/p/hd5/h66/86640324116510.jpg?format=gallery-medium'],
+      images: ['https://resources.cdn-kaspi.kz/img/m/p/hef/h6e/86640643702814.png?format=gallery-medium', 'https://resources.cdn-kaspi.kz/img/m/p/h1d/h3b/86640324083742.jpg?format=gallery-medium', 'https://resources.cdn-kaspi.kz/img/m/p/hd5/h66/86640324116510.jpg?format=gallery-medium'],
       link: 'https://kaspi.kz/shop/p/celimax-toner-dual-barrier-150-ml-108098827/?c=315430100'
     },
     {
@@ -80,7 +80,7 @@ export class ProductListComponent {
       price: 64000,
       rating: 4.5,
       image: 'https://resources.cdn-kaspi.kz/img/m/p/h52/h38/64075671109662.jpg?format=preview-large',
-      images: ['https://resources.cdn-kaspi.kz/img/m/p/he8/h69/64075673927710.jpg?format=gallery-medium', 'https://resources.cdn-kaspi.kz/img/m/p/heb/h9a/64075676680222.jpg?format=gallery-medium', 'https://resources.cdn-kaspi.kz/img/m/p/h60/h79/64075680645150.jpg?format=gallery-medium'],
+      images: ['https://resources.cdn-kaspi.kz/img/m/p/h52/h38/64075671109662.jpg?format=preview-large', 'https://resources.cdn-kaspi.kz/img/m/p/heb/h9a/64075676680222.jpg?format=gallery-medium', 'https://resources.cdn-kaspi.kz/img/m/p/h60/h79/64075680645150.jpg?format=gallery-medium'],
       link: 'https://kaspi.kz/shop/p/thomas-kosmala-4-apres-l-amour-parfjumernaja-voda-edp-100-ml-uniseks-101611285/?c=750000000'
     },
     {
@@ -110,7 +110,7 @@ export class ProductListComponent {
       price: 10700,
       rating: 5,
       image: 'https://resources.cdn-kaspi.kz/img/m/p/p5e/pa8/70340168.png?format=preview-large',
-      images: ['https://resources.cdn-kaspi.kz/img/m/p/p42/p79/53252509.png?format=gallery-medium', 'https://resources.cdn-kaspi.kz/img/m/p/pae/p7b/53252510.jpg?format=gallery-medium', 'https://resources.cdn-kaspi.kz/img/m/p/pca/p7b/53252511.jpg?format=gallery-medium'],
+      images: ['https://resources.cdn-kaspi.kz/img/m/p/p5e/pa8/70340168.png?format=preview-large', 'https://resources.cdn-kaspi.kz/img/m/p/pae/p7b/53252510.jpg?format=gallery-medium', 'https://resources.cdn-kaspi.kz/img/m/p/pca/p7b/53252511.jpg?format=gallery-medium'],
       link: 'https://kaspi.kz/shop/p/ofisnoe-kreslo-01-chernyi-118725692/?c=750000000'
     },
 
