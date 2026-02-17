@@ -139,4 +139,9 @@ export class ProductListComponent {
     this.selectedImage[productId] = img;
   }
 
+  amountStar(rate: number): number[] {
+    return Array(Math.floor(rate)).fill(0);
+
+  }
+
 }

@@ -18,7 +18,7 @@
             <p class="desc">{{ product.description }}</p>
 
             <p class="cost">{{ product.price }} ₸</p>
-            <p class="rating">⭐ {{ product.rating }}</p>
+            <p class="rate"><span class="rating">{{ product.rating }}</span><i class="fa-solid fa-star" style="color: rgba(255, 212, 59, 1);" *ngFor="let star of amountStar(product.rating)"> </i></p>
             <button><a [href]="product.link" target="_blank" rel="noopener">
                     Open on Kaspi
                 </a></button>
