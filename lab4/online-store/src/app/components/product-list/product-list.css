@@ -169,3 +169,11 @@ button:hover {
 .thumb:hover {
   transform: scale(1.05);
 }
+
+.delete{
+    font-size: 18px;
+    font-family: 'Montserrat';
+    color: #fff;
+    margin-left: 10px;
+
+}

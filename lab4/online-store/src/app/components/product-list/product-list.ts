@@ -144,4 +144,7 @@ export class ProductListComponent {
 
   }
 
+  deleteProduct(id: number){
+     this.products = this.products.filter(p => p.id !== id);
+  }
 }

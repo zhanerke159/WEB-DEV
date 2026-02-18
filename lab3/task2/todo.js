@@ -1,18 +1,34 @@
+const totalEl = document.querySelector(".total");
+const completedEl = document.querySelector(".count");
+
+function updateCounters() {
+    const items = document.querySelectorAll(".todolist .todoitem");
+    const completed = document.querySelectorAll(".todolist .checkbox:checked");
+
+    totalEl.textContent = `Total: ${items.length}`;
+    completedEl.textContent = `Number of completed tasks: ${completed.length}`;
+}
 document.addEventListener("change", function (e) {
     if (e.target.classList.contains("checkbox")) {
         const text = e.target.nextElementSibling;
         text.classList.toggle("completed");
+
+        updateCounters();
     }
 });
-document.addEventListener("click", function (d) {
-    const btn = d.target.closest(".delete")
-    if (!btn)
-        return;
-    const task = btn.parentElement;
+document.addEventListener("click", function (e) {
+    const btn = e.target.closest(".delete");
+    if (!btn) return;
+
+    const task = btn.closest(".todoitem"); 
     task.remove();
+
+    updateCounters();
 });
+
 document.querySelector(".form").addEventListener("submit", function (e) {
     e.preventDefault();
+
     const input = document.querySelector(".input");
     const value = input.value.trim();
     if (value === "") return;
@@ -43,4 +59,7 @@ document.querySelector(".form").addEventListener("submit", function (e) {
 
     document.querySelector(".todolist").appendChild(li);
     input.value = "";
+
+    updateCounters();
 });
+updateCounters();

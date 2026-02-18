@@ -22,6 +22,7 @@
             <button><a [href]="product.link" target="_blank" rel="noopener">
                     Open on Kaspi
                 </a></button>
+            <button class="delete" (click) = "deleteProduct(product.id)">Удалить</button>
             <p class="share">Поделиться: </p>
         </div>
 
