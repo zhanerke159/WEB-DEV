@@ -274,4 +274,9 @@ export class ProductService {
     selectCategories(id: number): void {
         this.selectCategoryId = id;
     }
+
+    getProducts(): Product[] {
+        return this.products;
+    }
+
 }

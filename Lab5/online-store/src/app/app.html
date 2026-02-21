@@ -4,33 +4,11 @@
   </p>
 </div>
 <hr>
-<div class="main">
-  <div class="card" *ngFor="let product of getProducts(selectedCategoryId)">
-    <div class="img-w">
-      <img class="img" [src]="getMainImage(product)">
-    </div>
 
-    <div class="thumbs">
-      <img *ngFor="let img of product.images" [src]="img" (click)="selectImage(product.id, img)"
-        [class.active]="getMainImage(product) === img" />
-    </div>
-
-    <div class="text">
-      <h3>{{product.name}}</h3>
-      <h4>{{product.price}} ₸</h4>
-      <p>{{product.description}}</p>
-      <p class="like">Likes: {{product.likes}} ❤️</p>
-      <button><a [href]="product.link">Open in Kaspi</a></button>
-
-    </div>
-
-    <p class="share">Share:</p>
-    <div class="links">
-      <button class="wh" type="button" (click)="shareWhatsapp(product)">WhatsApp</button>
-      <button class="tg" type="button" (click)="shareTelegram(product)">Telegram</button>
-    </div>
+<p *ngIf="!selectedCategoryId" class="welcome">
+  Welcome! Please select a category to see products.
+</p>
 
 
-  </div>
-
-</div>
+<app-product-list  *ngIf="selectedCategoryId" [products]="filteredProducts" (remove)="removeProduct($event)">
+</app-product-list>

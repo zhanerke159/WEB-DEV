@@ -4,10 +4,11 @@ import { ProductService } from './services/product.service';
 import { Category } from './models/category.models';
 import { Product } from './models/product.model';
 import { CommonModule } from '@angular/common';
+import { ProductListComponent } from './product-list/product-list';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, CommonModule],
+  imports: [RouterOutlet, CommonModule, ProductListComponent],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })
@@ -15,46 +16,22 @@ export class App {
   protected readonly title = signal('online-store');
 
   categories: Category[] = [];
-  selectedCategoryId!: number;
+  selectedCategoryId?: number;
+  products: Product[] = [];
 
   constructor(private productService: ProductService) {
     this.categories = this.productService.getCategories();
+    this.products = this.productService.getProducts();
+  }
 
-
-    if (this.categories.length > 0) {
-      this.selectedCategoryId = this.categories[0].id;
-    }
+  get filteredProducts(): Product[] {
+    return this.products.filter(p => p.categoryId === this.selectedCategoryId);
   }
 
   selectCategory(id: number): void {
     this.selectedCategoryId = id;
   }
-
-  getProducts(categoryId: number): Product[] {
-    return this.productService.getProductsByCategory(categoryId);
-  }
-
-  selectedImages: { [productId: number]: string } = {};
-
-  getMainImage(product: Product): string {
-    return this.selectedImages[product.id] || product.images[0];
-  }
-
-  selectImage(productId: number, image: string): void {
-    this.selectedImages[productId] = image;
-  }
-
-
-  shareWhatsapp(product: Product) {
-    const t = `Check out this product: ${product.link} `
-    const shareUrl = `https://wa.me/?text=${encodeURIComponent(t)}`;
-    window.open(shareUrl, '_blank');
-  }
-
-  shareTelegram(product: Product) {
-    const url = encodeURIComponent(product.link);
-    const text = encodeURIComponent(product.name);
-    const shareUrl = `https://t.me/share/url?url=${url}&text=${text}`;
-    window.open(shareUrl, '_blank');
+  removeProduct(id: number) {
+    this.products = this.products.filter(p => p.id !== id);
   }
 }
