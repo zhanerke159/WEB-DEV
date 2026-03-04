@@ -1,0 +1,57 @@
+<section class="page">
+    @if (isLoading()) {
+    <div class="loading">
+        <div class="spinner"></div>
+        <span>Loading album...</span>
+    </div>
+    } @else {
+
+    @if (album()) {
+    <article class="card">
+        <header class="head">
+            <div>
+                <div class="badge">Album #{{ album()!.id }}</div>
+                <h2 class="title">Album Details</h2>
+            </div>
+
+            <a class="link" routerLink="/albums">← Back to Albums</a>
+        </header>
+
+        <div class="info">
+            <div class="row">
+                <span class="label">User: </span>
+                <span class="value">#{{ album()!.userId }}</span>
+            </div>
+
+            <div class="row">
+                <span class="label">Album ID:</span>
+                <span class="value">#{{ album()!.id }}</span>
+            </div>
+        </div>
+
+        <div class="form">
+            <label class="label2">Title:</label>
+
+            <input id="title" class="input" type="text" [value]="editTitle()" (input)="onTitleChange($event)"
+                placeholder="Enter album title..." />
+
+            <div class="actions">
+                <button class="btn" (click)="save()" [disabled]="isSaving() || editTitle().trim().length === 0">
+                    @if (isSaving()) { Saving... } @else { Save }
+                </button>
+
+                <a class="btn" [routerLink]="['/albums', album()!.id, 'photos']">
+                    View Photos →
+                </a>
+            </div>
+        </div>
+    </article>
+    } @else {
+    <div class="error">
+        Album not found.
+        <a routerLink="/albums">Go back</a>
+    </div>
+    }
+
+    }
+</section>

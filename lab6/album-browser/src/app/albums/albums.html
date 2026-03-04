@@ -1,0 +1,30 @@
+<section class="page">
+    <header class="header">
+        <h2>Albums</h2>
+    </header>
+
+    @if (isLoading()) {
+    <div class="loading">
+        <div class="spinner"></div>
+        <span>Loading albums...</span>
+    </div>
+    } @else {
+
+    <div class="grid">
+        @for (album of albums(); track album.id) {
+        <article class="card">
+            <a class="card-link" [routerLink]="['/albums', album.id]">
+                <div class="meta">Album #{{ album.id }}</div>
+                <div class="title">{{ album.title }}</div>
+            </a>
+
+            <button class="btn" (click)="deleteAlbum($event, album.id)"
+                [disabled]="deletingAlbumId() === album.id">
+                @if (deletingAlbumId() === album.id) { Deleting... } @else { Delete }
+            </button>
+        </article>
+        }
+    </div>
+
+    }
+</section>
