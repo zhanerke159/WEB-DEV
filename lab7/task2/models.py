@@ -3,15 +3,17 @@ class Animal:
         self.name = name
         self.age = age
         self.weight = weight
-    def eat(food):
-        print(f"Animal eats {food}")
 
-    def make_sound():
-        print("Animal make sound.")
+    def eat(self, food):
+        print(f"{self.name} eats {food}")
+
+    def make_sound(self):
+        print("Animal makes a sound.")
 
     def __str__(self):
-        return "Name: "+self.name +"," + "Age: "+self.age + ","+"Weight: "+self.weight
-    
+        return f"Name: {self.name}, Age: {self.age}, Weight: {self.weight}"
+
+
 class Dog(Animal):
     def __init__(self, name, age, weight):
         super().__init__(name, age, weight)
@@ -20,7 +22,7 @@ class Dog(Animal):
         print("Woof")
 
     def run(self):
-        print(self.name, "runs.")
+        print(f"{self.name} runs.")
 
 
 class Cat(Animal):
@@ -31,4 +33,4 @@ class Cat(Animal):
         print("Meow")
 
     def sleep(self):
-        print(self.name, "is sleeping.")
+        print(f"{self.name} is sleeping.")

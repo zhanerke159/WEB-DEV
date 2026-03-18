@@ -9,4 +9,11 @@ animals = [dog, cat, animal]
 for a in animals:
     print(a)
     a.make_sound()
-    print()
+    a.eat("meat")
+
+    if isinstance(a, Dog):
+        a.run()
+    elif isinstance(a, Cat):
+        a.sleep()
+        
+        print()
