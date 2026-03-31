@@ -1,0 +1,5 @@
+$kind: http-request
+name: Delete Product
+url: ""
+method: GET
+order: 4384743658055542
