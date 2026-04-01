@@ -1,5 +1,5 @@
 $kind: http-request
 name: Delete Category
-url: ""
-method: GET
+url: "/api/categories/1/"
+method: DELETE
 order: 4466489468174024

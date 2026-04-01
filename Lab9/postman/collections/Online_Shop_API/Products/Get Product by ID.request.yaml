@@ -1,5 +1,5 @@
 $kind: http-request
 name: Get Product by ID
-url: ""
+url: "/api/products/1/"
 method: GET
 order: 1141758606727275

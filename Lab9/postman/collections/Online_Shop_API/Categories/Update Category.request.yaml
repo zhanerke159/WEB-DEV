@@ -1,5 +1,5 @@
 $kind: http-request
 name: Update Category
-url: ""
-method: GET
+url: "/api/categories/1/"
+method: PUT
 order: 4371460279285733

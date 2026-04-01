@@ -1,5 +1,5 @@
 $kind: http-request
 name: Get_Category_by_ID
-url: ""
+url: "/api/categories/1/"
 method: GET
 order: 1803078573257558
