@@ -12,6 +12,20 @@
       }
     },
     {
+      "name": "Update Category",
+      "request": {
+        "method": "PUT",
+        "url": "http://127.0.0.1:8000/api/categories/1/"
+      }
+    },
+    {
+      "name": "Delete Category",
+      "request": {
+        "method": "DELETE",
+        "url": "http://127.0.0.1:8000/api/categories/1/"
+      }
+    },
+    {
       "name": "Create Category",
       "request": {
         "method": "POST",
@@ -30,6 +44,20 @@
       "request": {
         "method": "POST",
         "url": "http://127.0.0.1:8000/api/products/"
+      }
+    },
+    {
+      "name": "Update Product",
+      "request": {
+        "method": "PUT",
+        "url": "http://127.0.0.1:8000/api/products/1/"
+      }
+    },
+    {
+      "name": "Delete Product",
+      "request": {
+        "method": "DELETE",
+        "url": "http://127.0.0.1:8000/api/products/1/"
       }
     }
   ]
