@@ -1,0 +1,5 @@
+$kind: http-request
+name: Create Category
+url: "/api/categories/"
+method: POST
+order: 4298905813620169

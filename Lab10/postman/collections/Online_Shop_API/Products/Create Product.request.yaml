@@ -1,0 +1,5 @@
+$kind: http-request
+name: Create Product
+url: "/api//products/"
+method: POST
+order: 2676826740310935

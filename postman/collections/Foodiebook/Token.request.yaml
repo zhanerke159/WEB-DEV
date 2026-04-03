@@ -1,0 +1,14 @@
+$kind: http-request
+name: Token
+url: http://127.0.0.1:8000/api/token/
+method: POST
+body:
+  type: json
+  content: "{\r
+
+    \  \"username\": \"zhanerke\",\r
+
+    \  \"password\": \"123456\"\r
+
+    }"
+order: 1775121957495

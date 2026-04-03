@@ -1,0 +1,5 @@
+$kind: http-request
+name: Update category
+url: ""
+method: GET
+order: 4287037558296160

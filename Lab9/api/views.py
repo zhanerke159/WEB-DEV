@@ -4,6 +4,7 @@ from rest_framework.decorators import action
 from rest_framework.response import Response
 from .serializers import CategorySerializer, ProductSerializer
 from rest_framework import viewsets
+from rest_framework import serializers
 
 def product_list(request):
     pr = Product.objects.all()

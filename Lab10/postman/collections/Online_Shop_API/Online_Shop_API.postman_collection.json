@@ -1,0 +1,64 @@
+{
+  "info": {
+    "name": "Online Shop API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Get Categories",
+      "request": {
+        "method": "GET",
+        "url": "http://127.0.0.1:8000/api/categories/"
+      }
+    },
+    {
+      "name": "Update Category",
+      "request": {
+        "method": "PUT",
+        "url": "http://127.0.0.1:8000/api/categories/1/"
+      }
+    },
+    {
+      "name": "Delete Category",
+      "request": {
+        "method": "DELETE",
+        "url": "http://127.0.0.1:8000/api/categories/1/"
+      }
+    },
+    {
+      "name": "Create Category",
+      "request": {
+        "method": "POST",
+        "url": "http://127.0.0.1:8000/api/categories/"
+      }
+    },
+    {
+      "name": "Get Products",
+      "request": {
+        "method": "GET",
+        "url": "http://127.0.0.1:8000/api/products/"
+      }
+    },
+    {
+      "name": "Create Product",
+      "request": {
+        "method": "POST",
+        "url": "http://127.0.0.1:8000/api/products/"
+      }
+    },
+    {
+      "name": "Update Product",
+      "request": {
+        "method": "PUT",
+        "url": "http://127.0.0.1:8000/api/products/1/"
+      }
+    },
+    {
+      "name": "Delete Product",
+      "request": {
+        "method": "DELETE",
+        "url": "http://127.0.0.1:8000/api/products/1/"
+      }
+    }
+  ]
+}
